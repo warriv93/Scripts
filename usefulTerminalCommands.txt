@@ -1,0 +1,32 @@
+//show size of directory
+du -h /dir
+
+//copy content of file to clipboard
+cat < file > | xclip
+
+//syncs content between folders (what's missing/old in destination folder will be moved/overwritten)
+rsync < from folder >< to folder >
+
+//change user
+su
+
+//file permissions
+//	7 = 4+2+1 (read/write/execute)
+//	6 = 4+2 (read/write)
+//	5 = 4+1 (read/execute)
+//	4 = 4 (read)
+//	3 = 2+1 (write/execute)
+//	2 = 2 (write)
+//	1 = 1 (execute)
+
+// COMMAND : OWNER : GROUP : WORLD : PATH
+   chmod   7       7       7      < dir >
+
+//file ownership
+chown simon:simon:simon  < dir >
+
+// Start application and save log to a file
+nohup < app name > &
+
+//show tree view of current dir
+tree .
