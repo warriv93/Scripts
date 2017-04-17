@@ -1,0 +1,29 @@
+#!/bin/sh
+# Author Simon Gullstrand
+# Version 0.2
+
+git add .
+
+echo "Insert desired commit message:"
+
+read commitMsg
+
+git commit -m "$commitMsg"
+
+git pull
+
+git push origin master
+
+
+echo "Successfully added, commited, pulled and pushed all changes to repo!"
+
+n=6; row="";
+for(( i=0; i<n; i++ ));
+do
+	row="$row ";
+done;
+row="${row%?}*";
+for(( i=0; i<n; i++ ));
+do
+	echo "$row"; row="${row#?}**";
+done
