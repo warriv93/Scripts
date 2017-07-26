@@ -27,6 +27,7 @@ chown simon:simon:simon  < dir >
 
 // Start application and save log to a file
 nohup < app name > &
+Docs: http://www.gnu.org/software/coreutils/manual/html_node/nohup-invocation.html#nohup-invocation
 
 //show tree view of current dir
 tree .
