@@ -1,3 +1,6 @@
+// BIG DATABASE WITH USEFUL TERMINAL COMMANDS
+http://www.gnu.org/software/coreutils/manual/html_node/
+
 //show size of directory
 du -h /dir
 
