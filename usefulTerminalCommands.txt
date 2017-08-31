@@ -1,6 +1,10 @@
 // BIG DATABASE WITH USEFUL TERMINAL COMMANDS
 http://www.gnu.org/software/coreutils/manual/html_node/
 
+//Copy files from/to ssh dir
+//SYNTAX: scp <source> <destination>
+scp /path/to/file username@a:/path/to/destination
+
 //show size of directory
 du -h /dir
 
