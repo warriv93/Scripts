@@ -53,8 +53,7 @@ git clone https://github.com/mrvautin/adminMongo.git && cd adminMongo
 npm install && cd .. 
 
 echo start pm2 as a service
-sudo env PATH=$PATH:/usr/local/bin pm2 startup -u simon
-
+sudo env PATH=$PATH:/usr/bin /usr/lib/node_modules/pm2/bin/pm2 startup systemd -u simon --hp /home/simon
 
 
 
