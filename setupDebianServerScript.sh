@@ -15,7 +15,7 @@ echo install applications
 sudo apt-get update
 
 echo basic server packages 
-sudo apt-get install git build-essential curl openssl libssl-dev mongodb
+sudo apt-get install git build-essential curl openssl libssl-dev mongodb 
 
 echo other packages
 sudo apt-get install fish 
@@ -23,7 +23,7 @@ sudo apt-get install fish
 
 
 echo setup nginx 
-sudo apt-get install nginx
+sudo apt-get install nginx nginx-extras
 sudo service nginx start
 
 echo setup nodejs 9.x
@@ -67,3 +67,4 @@ echo extra setup
 
 
 echo successfully setup the server!!!
+echo Please refer to evernote for further instantiation of mongodbs, nginx etc
