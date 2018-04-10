@@ -38,3 +38,7 @@ Docs: http://www.gnu.org/software/coreutils/manual/html_node/nohup-invocation.ht
 
 //show tree view of current dir
 tree .
+
+// start python script as daemon, in background
+python /opt/CouchPotato/CouchPotato.py -q --daemon --nolaunch
+
